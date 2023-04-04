@@ -44,13 +44,10 @@
     <!-- TODO: change this from CF default favicon, replacement file name MUST be favicon.ico -->
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
-      id="mainNav"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-xxl">
         <a class="navbar-brand" href="#">
-          <img src="/img/dw_signature_white.png" height="50" />
+          <img src="/img-jamal/Jamal Name Logo White.png" height="50" />
           <!--  TODO: play around with height of image with the height attribute -->
         </a>
         <!-- TODO: customize mobile menu button-->
@@ -63,7 +60,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-jg">
+            <i class="bi bi-list"></i>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -94,7 +93,24 @@
         </div>
       </div>
     </nav>
-    <header id="home" class="container-xxl"></header>
+    <header id="home" class="container-xxl">
+      <div class="mainHeader-cover">
+        <div class="mainHeader-content">
+          <div class="mainHeader-wrapper">
+            <div class="mainTitle">
+              <span>JAMAL</span>
+            </div>
+            <div class="mainTitle">
+              GIBSON<span
+                ><img class="mainLogo" src="/img-jamal/JG Logo White.png"
+              /></span>
+            </div>
+            <div class="subTitle">SOFTWARE DEVELOPPER</div>
+            <a href="#contact" class="btn btn-primary mt-3">CONTACT ME</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section id="about"></section>
       <section id="skills"></section>
@@ -103,30 +119,36 @@
       <section id="blog"></section>
       <section id="contact"></section>
     </main>
-    <footer class="container-fluid bg-dark py-3">
-      <div
-        class="row row-cols-1 row-cols-md-3 align-items-center container-xxl"
-      >
-        <div class="col">
-          <img src="/img/dw_signature_white.png" height="50" />
-          <!-- TODO: change image height and image -->
+
+    <!-- TODO: fix footer stuff -->
+    <footer class="container-fluid">
+      <div class="container-xxl py-3">
+        <div
+          class="row row-cols-1 row-cols-md-3 align-items-center gy-3 text-center"
+        >
+          <div class="col">
+            <img src="/img-jamal/Jamal Name Logo White.png" height="50" />
+            <!-- TODO: change image height and image -->
+          </div>
+          <div class="col text-md-end">
+            <!-- TODO: change social media links -->
+            <a href="https://linkedin.com/my-profile"
+              ><i class="socialicons bi bi-linkedin p-2"></i
+            ></a>
+            <a href="https://github.com/my-profile"
+              ><i class="socialicons bi bi-github p-2"></i
+            ></a>
+            <a href="https://twitter.com/my-profile"
+              ><i class="socialicons bi bi-twitter p-2"></i
+            ></a>
+            <a href="https://youtube.com/my-profile"
+              ><i class="socialicons bi bi-youtube p-2"></i
+            ></a>
+          </div>
+          <div class="col text-light order-md-first text-md-start">
+            &copy; 2023 Jamal Gibson
+          </div>
         </div>
-        <div class="col">
-          <!-- TODO: change social media links -->
-          <a href="https://linkedin.com/my-profile"
-            ><i class="bi bi-linkedin p-2"></i
-          ></a>
-          <a href="https://github.com/my-profile"
-            ><i class="bi bi-github p-2"></i
-          ></a>
-          <a href="https://twitter.com/my-profile"
-            ><i class="bi bi-twitter p-2"></i
-          ></a>
-          <a href="https://youtube.com/my-profile"
-            ><i class="bi bi-youtube p-2"></i
-          ></a>
-        </div>
-        <div class="col text-light">&copy; 2023 Jamal Gibson</div>
       </div>
     </footer>
 
