@@ -137,6 +137,34 @@ font-family: 'Roboto', sans-serif;
   font-size: 4rem;
 }
 
+.section-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--jg-dark-color);
+  color: var(--jg-light-color);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.cta-arrow {
+  color: var(--jg-highlight-color);
+  font-size: 2rem;
+  transition: 0.4s;
+}
+
+.cta-arrow:hover {
+  filter: brightness(1/2)
+}
+
+.section-cta span {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
  /* START: Nav Bar*/
 .navbar-toggler-jg
 {
@@ -233,13 +261,24 @@ h1, .h1{
     background-image: url(/img/DevPortFolioBG_992.png);
     height: 300px;
   }
+
   .mainTitle {
     font-size: 4.5rem;
     line-height: 3.5rem;
   }
+
   .subTitle {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+  }
+
+  .section-cta {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .cta-arrow {
+    font-size: 2.5rem;
   }
 }
 
@@ -257,13 +296,25 @@ h1, .h1{
     height: 500px;
     background-image: url(/img/DevPortFolioBG_2560.png);
   }
+
   .mainTitle {
     font-size: 6rem;
     line-height: 5rem;
   }
+
   .subTitle {
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
+  }
+
+  .section-cta {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+  }
+
+  .cta-arrow {
+    font-size: 3rem;
   }
 }
 
