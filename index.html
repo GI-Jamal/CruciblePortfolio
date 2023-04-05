@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Jamal Gibson - Developper Portfolio</title>
+    <title>Jamal Gibson - Developer Portfolio</title>
 
     <!-- Boostrap CSS -->
     <link
@@ -37,10 +37,15 @@
     />
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hovercard.css" />
     <link rel="stylesheet" href="/css/site.css" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/img-jamal/favicon.ico"
+      type="image/x-icon"
+    />
     <!-- TODO: change this from CF default favicon, replacement file name MUST be favicon.ico -->
   </head>
   <body>
@@ -105,19 +110,213 @@
                 ><img class="mainLogo" src="/img-jamal/JG Logo White.png"
               /></span>
             </div>
-            <div class="subTitle">SOFTWARE DEVELOPPER</div>
+            <div class="subTitle">SOFTWARE DEVELOPER</div>
             <a href="#contact" class="btn btn-primary mt-3">CONTACT ME</a>
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <section id="about"></section>
-      <section id="skills"></section>
-      <section id="projects"></section>
-      <section id="challenges"></section>
-      <section id="blog"></section>
-      <section id="contact"></section>
+    <main class="container-xxl">
+      <!-- TODO: customize the wording of the following sections -->
+      <section class="section-page" id="about">
+        <h2>About Me</h2>
+        <div class="row g-3">
+          <div class="col-12 col-lg-4">
+            <picture>
+              <source
+                media="(min-width: 992px)"
+                srcset="/img/dane_profile.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/img/dane_profile_992.jpg"
+              />
+              <source
+                media="(min-width: 576px)"
+                srcset="/img/dane_profile_768.jpg"
+              />
+              <img
+                src="img/dane_profile_576.jpg"
+                class="img-fluid profilePic"
+              />
+            </picture>
+          </div>
+          <div class="col-12 col-lg-8">
+            <h3>I'm Dane Whitman, A Full-Stack Web Developer</h3>
+            <p>
+              I am a software developer based in the United State. I have been
+              building applications and websites for years. I have been
+              successful in taking a company's idea and bringing it to life. I
+              mainly use C# and .NET to build web applications. I can take and
+              idea and turn it into meaningful and useful software products. The
+              ability to transform requirements into useful software helps me to
+              prioritize tasks, iterate fast, and deliver. Take a look at my
+              portfolio of work and let's see if we can work together on yout
+              next project.
+            </p>
+            <div class="row row-cols-1 row-cols-lg-2">
+              <div class="col">Name: Dane Whitman</div>
+              <div class="col">
+                Email: <a href="mailto:dane@example.com">dane@example.com</a>
+              </div>
+              <div class="col">From: North Carolina, US</div>
+            </div>
+            <a href="#" class="btn btn-primary mt-3">Download Resume</a>
+          </div>
+        </div>
+      </section>
+      <section class="section-page" id="skills">
+        <h2>What I Use</h2>
+        <p>
+          I am a creative problem solver. I build full-stack web and mobile
+          applications. I use C#, SQL, ASP.NET, Javascript, Xamarin, Bootstrap,
+          HTML, and CSS. I have highlighted my key technical skills that I will
+          bring to your project. Check out some of my
+          <a href="#projects"> full-stack projects</a> below!
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
+          <div class="col">
+            <i class="devicon-csharp-plain colored"></i>
+            <p>
+              I use C# on a daily basis to build full-stack web applications.
+              You can see my work implementing C# in my
+              <a href="#projects">projects</a> section!
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-dotnetcore-plain colored"></i>
+            <p>
+              I used proven design patterns and frameworks to build website.
+              ASP.NET Core Web and MVC fits the fill for most projects. Visit my
+              <a href="#projects">projects</a> to see examples.
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-javascript-plain colored"></i>
+            <p>
+              Javascript is the language of the web. I use vanilla js and I am
+              comforrtable with many js frameworks. Check out my
+              <a href="#challenges">challenges</a>
+              section for some js projects.
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+            <p>
+              I use HTML, CSS, and Bootstrap to build beautitful responsive
+              websites. Bootstrap is my go to CSS framework. Many shy away from
+              the front-end, but I embrace it.
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-github-original-wordmark colored"></i>
+            <p>
+              I use git and Github for all my projects. Git is the most used
+              source control framework on the planet. I also employ CI/CD for
+              publishing.
+            </p>
+          </div>
+          <div class="col">
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <p>
+              SQL is the language of the database. My projects all utilize a
+              database. I have used Postgres on all of them. I can write SQL on
+              any DB platform.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-page" id="projects">
+        <h2>Things I have Built</h2>
+        <p>
+          Showcasing complete functional projects demonstrates what I can bring
+          to your projects. I built these projects from the ground up to
+          demonstrate skills with front-end, back-end, security, and database
+          development. All the projects are full-stack web projects that are
+          published so that you can demo them easily.
+          <a href="#contact">Contact me</a> to get a complete code walk-through.
+        </p>
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+          <div class="col">
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/logos/BugTracker_600.jpg"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/logos/BugTracker_200.jpg" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    A full stack bug tracker app build with ASP.NET MVC, C#, and
+                    SQL.
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/logos/ExpenseTracker_600.jpg"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/logos/ExpenseTracker_200.jpg" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    A full stack address book app build with ASP.NET MVC, C#, and
+                    SQL.
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="hc-wrapper">
+              <div class="hc-card">
+                <picture>
+                  <source
+                    srcset="/img/logos/Blog_600.jpg"
+                    media="(min-width: 992px)"
+                  />
+                  <img src="/img/logos/Blog_200.jpg" />
+                </picture>
+                <div class="hc-content">
+                  <p>
+                    A full stack blog site app build with ASP.NET MVC, C#, and
+                    SQL.
+                  </p>
+                  <button type="button" class="btn btn-primary">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-page" id="challenges">
+        <h2>Smaller Things I Have Built</h2>
+      </section>
+      <section class="section-page" id="blog">
+        <h2>Stuff I Write About</h2>
+      </section>
+      <section class="section-page" id="contact">
+        <h2>Let's Chat!</h2>
+      </section>
     </main>
 
     <!-- TODO: fix footer stuff -->

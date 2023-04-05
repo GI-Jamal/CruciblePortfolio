@@ -107,6 +107,36 @@ font-family: 'Roboto', sans-serif;
   --bs-btn-hover-border-color: var(--jg-secondary-color);
 }
 
+/* START: Main Content */
+.section-page 
+{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-page:nth-child(even)
+{
+  background-color: var(--jg-light-color);
+}
+
+.section-page:nth-child(odd)
+{
+  background-color: var(--jg-primary-color);
+}
+
+.profilePic
+{
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#skills .colored
+{
+  font-size: 4rem;
+}
+
  /* START: Nav Bar*/
 .navbar-toggler-jg
 {
@@ -167,6 +197,27 @@ footer{
 }
 /* END: Footer */
 
+
+/* Element overrides */
+section
+{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h6, .h6,
+h5, .h5,
+h4, .h4,
+h3, .h3, 
+h2, .h2, 
+h1, .h1{
+  font-family: var(--jg-heading-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--jg-title-color);
+  letter-spacing: .1rem;
+
+}
 
 /***** MEDIA QUERIES *****/
 /* Small devices (landscape phones, 576px and up) */
