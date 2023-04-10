@@ -51,8 +51,7 @@ font-family: 'Roboto', sans-serif;
   background-color: var(--jg-light-color);
 }
 
-.mainHeader-cover
-{
+.mainHeader-cover {
   margin-top: 76px;
   height: 400px;
   background-image: url(/img/cityBG_2560.png);
@@ -61,8 +60,7 @@ font-family: 'Roboto', sans-serif;
   background-position: left top;
 }
 
-.mainHeader-cover > .mainHeader-content
-{
+.mainHeader-cover > .mainHeader-content {
   backdrop-filter: blur(2px) brightness(90%);
 }
 
@@ -98,8 +96,7 @@ font-family: 'Roboto', sans-serif;
 }
 /* END: Main Header */
 
-.btn-primary
-{
+.btn-primary {
   --bs-btn-bg: var(--jg-secondary-color);
   --bs-btn-border-color: var(--jg-secondary-color);
   --bs-btn-hover-bg: var(--jg-highlight-color);
@@ -108,32 +105,35 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* START: Main Content */
-.section-page 
-{
+.section-page {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.section-page:nth-child(even)
-{
+.section-page:nth-child(even) {
   background-color: var(--jg-light-color);
 }
 
-.section-page:nth-child(odd)
-{
+.section-page:nth-child(odd) {
   background-color: var(--jg-primary-color);
 }
 
-.profilePic
-{
+.section-page:nth-last-child(2) {
+  background-color: var(--jg-primary-color);
+}
+
+.section-page:last-child {
+  background-color: var(--jg-light-color);
+}
+
+.profilePic {
   border-radius: 20px;
   border-style: solid;
   border-width: 1px;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
-#skills .colored
-{
+#skills .colored {
   font-size: 4rem;
 }
 
@@ -157,7 +157,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .cta-arrow:hover {
-  filter: brightness(1/2)
+  filter: brightness(1/2);
 }
 
 .section-cta span {
@@ -165,21 +165,18 @@ font-family: 'Roboto', sans-serif;
   padding-right: 1rem;
 }
 
- /* START: Nav Bar*/
-.navbar-toggler-jg
-{
+/* START: Nav Bar*/
+.navbar-toggler-jg {
   color: var(--jg-nav-toggler-color);
   font-size: 1.5rem;
 }
 
-.navbar-toggler
-{
+.navbar-toggler {
   color: var(--jg-nav-toggler-glow);
 }
 
-#mainNav
-{
-  background: var(--jg-nav-bg-color)
+#mainNav {
+  background: var(--jg-nav-bg-color);
 }
 /* END: Nav Bar*/
 
@@ -220,35 +217,60 @@ footer {
   color: var(--jg-highlight-color);
 }
 
-footer{
+.footer-cta {
+  background-color: var(--jg-secondary-color);
+  border-radius: 10px;
+  width: 75%;
+}
+
+.footer-message {
+  color: var(--jg-dark-color);
+  letter-spacing: 0.1rem;
+}
+
+.footer-bg-cta {
+  background: linear-gradient(
+    to bottom,
+    var(--jg-background-color) 0%,
+    var(--jg-background-color) 50%,
+    var(--jg-dark-color) 50%,
+    var(--jg-dark-color) 100%
+  );
+}
+
+.footer-main {
   background-color: var(--jg-dark-color);
 }
 /* END: Footer */
 
-
 /* Element overrides */
-section
-{
+section {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-h6, .h6,
-h5, .h5,
-h4, .h4,
-h3, .h3, 
-h2, .h2, 
-h1, .h1{
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
   font-family: var(--jg-heading-font);
   font-weight: 700;
   text-transform: uppercase;
   color: var(--jg-title-color);
-  letter-spacing: .1rem;
-
+  letter-spacing: 0.1rem;
 }
 
 /***** MEDIA QUERIES *****/
 /* Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) {
   .mainHeader {
     background-image: url(/img/DevPortFolioBG_767.png);
