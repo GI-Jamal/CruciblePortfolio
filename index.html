@@ -49,7 +49,7 @@
     />
     <!-- TODO: change this from CF default favicon, replacement file name MUST be favicon.ico -->
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#mainNav">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-xxl">
         <a class="navbar-brand" href="#">
@@ -616,7 +616,7 @@
       </section>
       <section class="section-page" id="contact">
         <h2>Let's Chat!</h2>
-        <form action="#">
+        <form method="POST" data-netlify="true" name="contact">
           <!-- form is used for user input, must include action attribute! -->
           <div class="row">
             <div class="col-12 col-md-6 mb-2">
