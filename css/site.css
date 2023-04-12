@@ -42,26 +42,17 @@ font-family: 'Roboto', sans-serif;
   height: 0.6em;
 }
 
-.mainHeader {
-  height: 200px;
-  margin-top: 76px;
-  background-image: url(/img/DevPortFolioBG_576.png);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-color: var(--jg-light-color);
-}
-
 .mainHeader-cover {
-  margin-top: 76px;
-  height: 400px;
-  background-image: url(/img/cityBG_2560.png);
+  height: 250px;
+  background-image: url(/img/sailing-2to1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left top;
+  background-position: right;
+  margin-top: 65px;
 }
 
 .mainHeader-cover > .mainHeader-content {
-  backdrop-filter: blur(2px) brightness(90%);
+  backdrop-filter: brightness(90%);
 }
 
 .mainHeader-cover .mainTitle,
@@ -272,16 +263,13 @@ h1,
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
-  .mainHeader {
-    background-image: url(/img/DevPortFolioBG_767.png);
+  .mainHeader-content {
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .mainHeader {
-    background-image: url(/img/DevPortFolioBG_992.png);
-    height: 300px;
+  .mainHeader-content {
   }
 
   .mainTitle {
@@ -306,17 +294,13 @@ h1,
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .mainHeader {
-    height: 400px;
-    background-image: url(/img/DevPortFolioBG_1200.png);
+  .mainHeader-content {
   }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .mainHeader {
-    height: 500px;
-    background-image: url(/img/DevPortFolioBG_2560.png);
+  .mainHeader-content {
   }
 
   .mainTitle {
@@ -342,4 +326,6 @@ h1,
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+  .mainHeader-content {
+  }
 }
