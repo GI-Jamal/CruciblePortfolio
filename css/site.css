@@ -62,15 +62,30 @@ font-family: 'Roboto', sans-serif;
   letter-spacing: 0.09rem;
 }
 
-.mainHeader-wrapper {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .mainHeader-content {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.mainHeader-cover {
+  margin-top: 50px;
+  background-image: url(/img/sailing-2to1.png);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.mainHeader-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 60px;
+}
+
+.mainHeaderButton {
+  margin-top: 10%;
 }
 
 /* END: Main Header */
@@ -249,45 +264,39 @@ h1,
 
 /***** MEDIA QUERIES *****/
 /* */
-
-@media (min-width: 1px) and (orientation: landscape){
+@media (orientation: landscape) {
   .mainHeader-cover {
+    height: 250px;
+    background-image: url(/img/sailing-2to1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    margin-top: 56px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 650px) and (max-height: 280px) {
+  .mainHeader-cover{
     height: 250px;
     background-image: url(/img/sailing-2to1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
     margin-top: 30px;
+
   }
-}
-
-
-@media (min-width: 1px) and (orientation: portrait) {
-  .mainHeader-content {
-    margin-top: 50px;
-    background-image: url(/img/sailing-2to1.png);
-    height: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top right;
+  .mainHeader-wrapper{
+    margin-top: 70px;
   }
 
-  .headerButton {
-    margin-top: 50px;
-  }
-
-  .mainHeader-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 60px;
-  }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 667px) and (orientation: landscape) {
+@media (min-width: 576px) and (orientation: landscape) and (min-height: 281px){
   .mainHeader-cover {
-    height: 300px;
+    height: 400px;
     background-image: url(/img/sailing-base.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -296,26 +305,21 @@ h1,
   }
 }
 
-@media (min-width: 667px) and (orientation: portrait) {
+@media (min-width: 576) and (orientation: portrait) {
   .mainHeader-cover {
-    height: 250px;
+    height: 400px;
     background-image: url(/img/sailing-2to1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     margin-top: 50px;
   }
-
-  .mainHeader-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 50px;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .mainHeader-content {
+  .mainHeader-cover {
+    height: 400px;
   }
 
   .mainTitle {
@@ -339,14 +343,36 @@ h1,
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .mainHeader-content {
+@media (min-width: 992px) and (orientation: landscape) {
+  .mainHeader-cover {
+    height: 500px;
+  }
+
+  .mainTitle {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  .subTitle {
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .section-cta {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+  }
+
+  .cta-arrow {
+    font-size: 3rem;
   }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .mainHeader-content {
+@media (min-width: 1200px) and (orientation: landscape) {
+  .mainHeader-cover {
+    height: 770px;
   }
 
   .mainTitle {
@@ -371,7 +397,24 @@ h1,
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  .mainHeader-content {
+@media (min-width: 1400px) and (orientation: landscape) {
+  .mainTitle {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  .subTitle {
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .section-cta {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+  }
+
+  .cta-arrow {
+    font-size: 3rem;
   }
 }
