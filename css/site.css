@@ -42,19 +42,6 @@ font-family: 'Roboto', sans-serif;
   height: 0.6em;
 }
 
-.mainHeader-cover {
-  height: 250px;
-  background-image: url(/img/sailing-2to1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  margin-top: 65px;
-}
-
-.mainHeader-cover > .mainHeader-content {
-  backdrop-filter: brightness(90%);
-}
-
 .mainHeader-cover .mainTitle,
 .mainHeader-cover .subTitle {
   color: white;
@@ -62,7 +49,7 @@ font-family: 'Roboto', sans-serif;
 
 .mainTitle {
   font-family: var(--jg-title-font);
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   line-height: 2rem;
   letter-spacing: 0.5rem;
 }
@@ -85,6 +72,7 @@ font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
 }
+
 /* END: Main Header */
 
 .btn-primary {
@@ -260,10 +248,68 @@ h1,
 }
 
 /***** MEDIA QUERIES *****/
+/* */
+
+@media (min-width: 1px) and (orientation: landscape){
+  .mainHeader-cover {
+    height: 250px;
+    background-image: url(/img/sailing-2to1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    margin-top: 30px;
+  }
+}
+
+
+@media (min-width: 1px) and (orientation: portrait) {
+  .mainHeader-content {
+    margin-top: 50px;
+    background-image: url(/img/sailing-2to1.png);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .headerButton {
+    margin-top: 50px;
+  }
+
+  .mainHeader-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 60px;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {
-  .mainHeader-content {
+@media (min-width: 667px) and (orientation: landscape) {
+  .mainHeader-cover {
+    height: 300px;
+    background-image: url(/img/sailing-base.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 667px) and (orientation: portrait) {
+  .mainHeader-cover {
+    height: 250px;
+    background-image: url(/img/sailing-2to1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    margin-top: 50px;
+  }
+
+  .mainHeader-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 50px;
   }
 }
 
