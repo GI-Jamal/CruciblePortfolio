@@ -189,6 +189,7 @@ body {
   line-height: var(--jg-line-height);
   color: var(--jg-dark-color);
   background: var(--jg-background-color);
+  background-attachment: fixed;
 }
 
 main {
@@ -276,25 +277,22 @@ h1,
 }
 
 @media (orientation: landscape) and (min-width: 650px) and (max-height: 280px) {
-  .mainHeader-cover{
+  .mainHeader-cover {
     height: 250px;
     background-image: url(/img/sailing-2to1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
     margin-top: 30px;
-
   }
-  .mainHeader-wrapper{
+  .mainHeader-wrapper {
     margin-top: 70px;
   }
-
-  
 }
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) and (orientation: landscape) and (min-height: 281px){
+@media (min-width: 576px) and (orientation: landscape) and (min-height: 281px) {
   .mainHeader-cover {
     height: 400px;
     background-image: url(/img/sailing-base.png);
