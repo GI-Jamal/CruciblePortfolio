@@ -310,7 +310,7 @@ h1,
 }
 
 .brandImaging {
-  max-height: 40px !important;
+  max-height: 40px;
 }
 
 /***** MEDIA QUERIES *****/
@@ -464,5 +464,11 @@ h1,
 
   .cta-arrow {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 319px) {
+  .brandImaging {
+    max-width: 170px !important;
   }
 }
