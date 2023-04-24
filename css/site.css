@@ -12,6 +12,7 @@
   --jg-dark-color: #212121;
   --jg-light-color: #deeefb;
   --jg-background-color: rgba(250, 250, 250, 0.8);
+  --jg-gradient-color: linear-gradient(135deg, #1c164d, #482c69 67%, #863e97);
 
   /* Nav bar colors */
   --jg-nav-bg-color: var(--jg-dark-color);
