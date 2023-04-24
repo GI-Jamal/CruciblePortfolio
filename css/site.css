@@ -309,6 +309,10 @@ h1,
   letter-spacing: 0.1rem;
 }
 
+.brandImaging {
+  max-height: 40px !important;
+}
+
 /***** MEDIA QUERIES *****/
 /* */
 @media (orientation: landscape) {
