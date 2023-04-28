@@ -54,7 +54,7 @@
   color: white;
   z-index: 3;
   position: relative;
-  transform: translatey(30px);
+  transform: translateY(30px);
   opacity: 0;
   transition: 0.5s;
 }
