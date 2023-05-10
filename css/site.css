@@ -6,11 +6,11 @@
   --jg-body-font: "Roboto", sans-serif;
 
   /* Colors */
-  --jg-primary-color: rgb(145, 203, 251);
+  --jg-primary-color: rgb(29, 6, 67);
   --jg-secondary-color: rgb(66, 148, 186);
   --jg-highlight-color: rgb(250, 225, 120);
   --jg-dark-color: #212121;
-  --jg-light-color: #deeefb;
+  --jg-light-color: #17113fbd;
   --jg-background-color: rgba(250, 250, 250, 0.8);
   --jg-french-gray: #cbcbd7;
   --jg-space-cadet: #222444;
@@ -55,7 +55,7 @@
   --keppel: #4ea699ff;
   --emerald: #2dd881ff;
   --emerald2: rgb(39, 182, 108);
-  --jg-gradient-color: linear-gradient(135deg, #1c164d, #482c69 67%, #863e97);
+  --jg-gradient-color: linear-gradient(135deg, #191346, #482c69 67%, #863e97);
 
   /* Nav bar colors */
   --jg-nav-bg-color: var(--jg-gradient-color);
@@ -68,7 +68,7 @@
   --jg-form-background-color: var(--jg-background-color);
 
   /* Text styles */
-  --jg-title-color: var(--jg-dark-color);
+  --jg-title-color: var(--jg-white);
   --jg-font-size: 1.2rem;
   --jg-font-weight: 400;
   --jg-line-height: 1.5rem;
@@ -113,8 +113,8 @@ font-family: 'Roboto', sans-serif;
 }
 
 .mainHeader-cover {
-  margin-top: 50px;
-  background-image: url(/img/sailing-2to1.png);
+  /* margin-top: 50px; */
+  /* background-image: url(/img/sailing-2to1.png); */
   width: 100%;
   height: auto;
   background-size: cover;
@@ -125,7 +125,7 @@ font-family: 'Roboto', sans-serif;
 .mainHeader-wrapper {
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .mainHeaderButton {
@@ -144,11 +144,34 @@ font-family: 'Roboto', sans-serif;
 
 /* START: Main Content */
 .section-page {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.section-page:nth-child(even) {
+.even {
+  background-color: var(--jg-gradient-color);
+}
+
+.odd {
+  background-color: var(--jg-primary-color);
+}
+
+.section-divider-even {
+  height: 3rem;
+  width: 100%;
+  background-color: var(--jg-primary-color);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 100%);
+  border-bottom: 50px solid var(--jg-primary-color);
+}
+
+.section-divider-odd {
+  height: 3rem;
+  width: 100%;
+  background-color: var(--jg-primary-color);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+
+/* .section-page:nth-child(even) {
   background-color: var(--jg-light-color);
 }
 
@@ -162,7 +185,7 @@ font-family: 'Roboto', sans-serif;
 
 .section-page:last-child {
   background-color: var(--jg-light-color);
-}
+} */
 
 .profilePic {
   border-radius: 20px;
@@ -181,7 +204,7 @@ font-family: 'Roboto', sans-serif;
   justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: var(--jg-dark-color);
+  background-color: var(--jet);
   color: var(--jg-light-color);
   text-align: center;
   font-size: 0.9rem;
@@ -233,7 +256,7 @@ body {
   font-size: var(--jg-font-size);
   font-weight: var(--jg-font-weight);
   line-height: var(--jg-line-height);
-  color: var(--jg-dark-color);
+  color: var(--jg-white);
   background: var(--jg-gradient-color);
   background-attachment: fixed;
 }
@@ -267,16 +290,6 @@ footer {
 .footer-message {
   color: var(--jg-dark-color);
   letter-spacing: 0.1rem;
-}
-
-.footer-bg-cta {
-  background: linear-gradient(
-    to bottom,
-    var(--jg-gradient-color) 0%,
-    var(--jg-gradient-color) 50%,
-    var(--jet) 50%,
-    var(--jet) 100%
-  );
 }
 
 .footer-main {
@@ -313,9 +326,13 @@ h1,
   max-height: 40px;
 }
 
+.mainHeader-cover {
+  height: 100vh;
+}
+
 /***** MEDIA QUERIES *****/
 /* */
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   .mainHeader-cover {
     height: 250px;
     background-image: url(/img/sailing-2to1.png);
@@ -342,7 +359,7 @@ h1,
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) and (orientation: landscape) and (min-height: 281px) {
+/* @media (min-width: 576px) and (orientation: landscape) and (min-height: 281px) {
   .mainHeader-cover {
     height: 400px;
     background-image: url(/img/sailing-base.png);
@@ -362,14 +379,10 @@ h1,
     background-position: right;
     margin-top: 50px;
   }
-}
+} */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .mainHeader-cover {
-    height: 400px;
-  }
-
   .mainTitle {
     font-size: 4.5rem;
     line-height: 3.5rem;
@@ -392,10 +405,6 @@ h1,
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (orientation: landscape) {
-  .mainHeader-cover {
-    height: 500px;
-  }
-
   .mainTitle {
     font-size: 6rem;
     line-height: 5rem;
@@ -419,10 +428,6 @@ h1,
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (orientation: landscape) {
-  .mainHeader-cover {
-    height: 770px;
-  }
-
   .mainTitle {
     font-size: 6rem;
     line-height: 5rem;

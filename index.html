@@ -47,10 +47,7 @@
   </head>
   <body data-bs-spy="scroll" data-bs-target="#mainNav">
     <!-- Navigation Bar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top"
-      id="mainNav"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg" id="mainNav">
       <div class="container-xxl">
         <a class="navbar-brand" href="/index.html">
           <img
@@ -126,336 +123,364 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container-xxl">
+    <main>
       <!-- TODO: customize the wording of the following sections -->
-      <section class="section-page" id="about">
-        <h2>About Me</h2>
-        <div class="row g-3">
-          <div class="col-12 col-lg-4">
-            <picture>
-              <source media="(min-width: 992px)" srcset="/img/profilepic.jpg" />
-              <source media="(min-width: 768px)" srcset="/img/profilepic.jpg" />
-              <source media="(min-width: 576px)" srcset="/img/profilepic.jpg" />
-              <img src="/img/profilepic.jpg" class="img-fluid profilePic" />
-            </picture>
-          </div>
-          <div class="col-12 col-lg-8">
-            <h3>I'm Jamal and I'm A Full-Stack Web Developer</h3>
-            <p>
-              Hey there and welcome to my website. My name is Jamal and I am a
-              full-stack software developper based out of the city of Toronto in
-              Canada. I have been building applications and websites for years.
-              I have been successful in taking a company's idea and bringing it
-              to life. I mainly use C# and .NET to build web applications. I can
-              take and idea and turn it into meaningful and useful software
-              products. The ability to transform requirements into useful
-              software helps me to prioritize tasks, iterate fast, and deliver.
-              Take a look at my portfolio of work and let's see if we can work
-              together on yout next project.
-            </p>
-            <div class="row row-cols-1 row-cols-lg-2">
-              <div class="col">Name: Jamal Gibson</div>
-              <div class="col">
-                Email:
-                <a href="mailto:dane@example.com">jamal.gibson@rogers.com</a>
-              </div>
-              <div class="col">From: Toronto, Ontario, Canada</div>
+      <section class="section-page odd" id="about">
+        <div class="container-xxl">
+          <h2>About Me</h2>
+          <div class="row g-3">
+            <div class="col-12 col-lg-4">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/img/profilepic.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/img/profilepic.jpg"
+                />
+                <source
+                  media="(min-width: 576px)"
+                  srcset="/img/profilepic.jpg"
+                />
+                <img src="/img/profilepic.jpg" class="img-fluid profilePic" />
+              </picture>
             </div>
-            <a href="#" class="btn btn-primary mt-3">Download Resume</a>
-          </div>
-        </div>
-      </section>
-      <section class="section-page" id="skills">
-        <h2>What I Use</h2>
-        <p>
-          I am a creative problem solver. I build full-stack web and mobile
-          applications. I use C#, SQL, ASP.NET, Javascript, Xamarin, Bootstrap,
-          HTML, and CSS. I have highlighted my key technical skills that I will
-          bring to your project. Check out some of my
-          <a href="#projects"> full-stack projects</a> below!
-        </p>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
-          <div class="col">
-            <i class="devicon-csharp-plain colored"></i>
-            <p>
-              I use C# on a daily basis to build full-stack web applications.
-              You can see my work implementing C# in my
-              <a href="#projects">projects</a> section!
-            </p>
-          </div>
-          <div class="col">
-            <i class="devicon-dotnetcore-plain colored"></i>
-            <p>
-              I used proven design patterns and frameworks to build website.
-              ASP.NET Core Web and MVC fits the fill for most projects. Visit my
-              <a href="#projects">projects</a> to see examples.
-            </p>
-          </div>
-          <div class="col">
-            <i class="devicon-javascript-plain colored"></i>
-            <p>
-              Javascript is the language of the web. I use vanilla js and I am
-              comforrtable with many js frameworks. Check out my
-              <a href="#challenges">challenges</a>
-              section for some js projects.
-            </p>
-          </div>
-          <div class="col">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-            <p>
-              I use HTML, CSS, and Bootstrap to build beautitful responsive
-              websites. Bootstrap is my go to CSS framework. Many shy away from
-              the front-end, but I embrace it.
-            </p>
-          </div>
-          <div class="col">
-            <i class="devicon-git-plain colored"></i>
-            <i class="devicon-github-original-wordmark colored"></i>
-            <p>
-              I use git and Github for all my projects. Git is the most used
-              source control framework on the planet. I also employ CI/CD for
-              publishing.
-            </p>
-          </div>
-          <div class="col">
-            <i class="devicon-postgresql-plain-wordmark colored"></i>
-            <p>
-              SQL is the language of the database. My projects all utilize a
-              database. I have used Postgres on all of them. I can write SQL on
-              any DB platform.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="section-page" id="projects">
-        <h2>Things I have Built</h2>
-        <p>
-          Showcasing complete functional projects demonstrates what I can bring
-          to your projects. I built these projects from the ground up to
-          demonstrate skills with front-end, back-end, security, and database
-          development. All the projects are full-stack web projects that are
-          published so that you can demo them easily.
-          <a href="#contact">Contact me</a> to get a complete code walk-through.
-        </p>
-        <div class="row row-cols-1 row-cols-md-3 g-5">
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/BugTracker_600.jpg" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack bug tracker app build with ASP.NET MVC, C#, and
-                    SQL.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#projectOneModal"
-                  >
-                    Learn More
-                  </button>
+            <div class="col-12 col-lg-8">
+              <h3>I'm Jamal and I'm A Full-Stack Web Developer</h3>
+              <p>
+                Hey there and welcome to my website. My name is Jamal and I am a
+                full-stack software developper based out of the city of Toronto
+                in Canada. I have been building applications and websites for
+                years. I have been successful in taking a company's idea and
+                bringing it to life. I mainly use C# and .NET to build web
+                applications. I can take and idea and turn it into meaningful
+                and useful software products. The ability to transform
+                requirements into useful software helps me to prioritize tasks,
+                iterate fast, and deliver. Take a look at my portfolio of work
+                and let's see if we can work together on yout next project.
+              </p>
+              <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">Name: Jamal Gibson</div>
+                <div class="col">
+                  Email:
+                  <a href="mailto:dane@example.com">jamal.gibson@rogers.com</a>
                 </div>
+                <div class="col">From: Toronto, Ontario, Canada</div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/ExpenseTracker_600.jpg" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack address book app build with ASP.NET MVC, C#,
-                    and SQL.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#projectTwoModal"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/Blog_600.jpg" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack blog site app build with ASP.NET MVC, C#, and
-                    SQL.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#projectThreeModal"
-                  >
-                    Learn More
-                  </button>
-                </div>
-              </div>
+              <a href="#" class="btn btn-primary mt-3">Download Resume</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="section-page" id="challenges">
-        <h2>Smaller Things I Have Built</h2>
-        <p>
-          Coding Challenges are smaller in scope and scale than my full-stack
-          projects. These problems are fun to solve and also showcase some UI
-          skills and front-end dev skills with Javascript. All the projects are
-          published so you can easily see my work in action.
-          <a href="#contact">Contact me</a> if you would like to discuss any of
-          my work.
-        </p>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/FlipFlopLogo.svg" class="img-fluid" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack bug tracker app build with ASP.NET MVC, C#, and
-                    SQL.
-                  </p>
-                  <a
-                    type="button"
-                    class="btn btn-primary"
-                    href="https://jamalgibson-flipflop.netlify.app/"
-                    target="_blank"
-                  >
-                    Learn More
-                  </a>
+      <div class="even">
+        <div class="section-divider-odd"></div>
+      </div>
+      <section class="section-page even" id="skills">
+        <div class="container-xxl">
+          <h2>What I Use</h2>
+          <p>
+            I am a creative problem solver. I build full-stack web and mobile
+            applications. I use C#, SQL, ASP.NET, Javascript, Xamarin,
+            Bootstrap, HTML, and CSS. I have highlighted my key technical skills
+            that I will bring to your project. Check out some of my
+            <a href="#projects"> full-stack projects</a> below!
+          </p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
+            <div class="col">
+              <i class="devicon-csharp-plain colored"></i>
+              <p>
+                I use C# on a daily basis to build full-stack web applications.
+                You can see my work implementing C# in my
+                <a href="#projects">projects</a> section!
+              </p>
+            </div>
+            <div class="col">
+              <i class="devicon-dotnetcore-plain colored"></i>
+              <p>
+                I used proven design patterns and frameworks to build website.
+                ASP.NET Core Web and MVC fits the fill for most projects. Visit
+                my
+                <a href="#projects">projects</a> to see examples.
+              </p>
+            </div>
+            <div class="col">
+              <i class="devicon-javascript-plain colored"></i>
+              <p>
+                Javascript is the language of the web. I use vanilla js and I am
+                comforrtable with many js frameworks. Check out my
+                <a href="#challenges">challenges</a>
+                section for some js projects.
+              </p>
+            </div>
+            <div class="col">
+              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-bootstrap-plain colored"></i>
+              <p>
+                I use HTML, CSS, and Bootstrap to build beautitful responsive
+                websites. Bootstrap is my go to CSS framework. Many shy away
+                from the front-end, but I embrace it.
+              </p>
+            </div>
+            <div class="col">
+              <i class="devicon-git-plain colored"></i>
+              <i class="devicon-github-original-wordmark colored"></i>
+              <p>
+                I use git and Github for all my projects. Git is the most used
+                source control framework on the planet. I also employ CI/CD for
+                publishing.
+              </p>
+            </div>
+            <div class="col">
+              <i class="devicon-postgresql-plain-wordmark colored"></i>
+              <p>
+                SQL is the language of the database. My projects all utilize a
+                database. I have used Postgres on all of them. I can write SQL
+                on any DB platform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="even">
+        <div class="section-divider-even"></div>
+      </div>
+      <section class="section-page odd" id="projects">
+        <div class="container-xxl">
+          <h2>Things I have Built</h2>
+          <p>
+            Showcasing complete functional projects demonstrates what I can
+            bring to your projects. I built these projects from the ground up to
+            demonstrate skills with front-end, back-end, security, and database
+            development. All the projects are full-stack web projects that are
+            published so that you can demo them easily.
+            <a href="#contact">Contact me</a> to get a complete code
+            walk-through.
+          </p>
+          <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/BugTracker_600.jpg" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack bug tracker app build with ASP.NET MVC, C#,
+                      and SQL.
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectOneModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/ExpenseTracker_600.jpg" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack address book app build with ASP.NET MVC, C#,
+                      and SQL.
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectTwoModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/Blog_600.jpg" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack blog site app build with ASP.NET MVC, C#, and
+                      SQL.
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectThreeModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/EvilOliveLogo.svg" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack bug tracker app build with ASP.NET MVC, C#, and
-                    SQL.
-                  </p>
-                  <a
-                    type="button"
-                    class="btn btn-primary"
-                    href="https://jamalgibson-evilolive.netlify.app/"
-                    target="_blank"
-                  >
-                    Learn More
-                  </a>
+        </div>
+      </section>
+      <div class="even">
+        <div class="section-divider-odd"></div>
+      </div>
+      <section class="section-page even" id="challenges">
+        <div class="container-xxl">
+          <h2>Smaller Things I Have Built</h2>
+          <p>
+            Coding Challenges are smaller in scope and scale than my full-stack
+            projects. These problems are fun to solve and also showcase some UI
+            skills and front-end dev skills with Javascript. All the projects
+            are published so you can easily see my work in action.
+            <a href="#contact">Contact me</a> if you would like to discuss any
+            of my work.
+          </p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/FlipFlopLogo.svg" class="img-fluid" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack bug tracker app build with ASP.NET MVC, C#,
+                      and SQL.
+                    </p>
+                    <a
+                      type="button"
+                      class="btn btn-primary"
+                      href="https://jamalgibson-flipflop.netlify.app/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/EatBayLogo.svg" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack bug tracker app build with ASP.NET MVC, C#, and
-                    SQL.
-                  </p>
-                  <a
-                    type="button"
-                    class="btn btn-primary"
-                    href="https://jamalgibson-eatbay.netlify.app/"
-                    target="_blank"
-                  >
-                    Learn More
-                  </a>
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/EvilOliveLogo.svg" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack bug tracker app build with ASP.NET MVC, C#,
+                      and SQL.
+                    </p>
+                    <a
+                      type="button"
+                      class="btn btn-primary"
+                      href="https://jamalgibson-evilolive.netlify.app/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/EventNestLogo.svg" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack bug tracker app build with ASP.NET MVC, C#, and
-                    SQL.
-                  </p>
-                  <a
-                    type="button"
-                    class="btn btn-primary"
-                    href="https://jamalgibson-eventnest.netlify.app/"
-                    target="_blank"
-                  >
-                    Learn More
-                  </a>
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/EatBayLogo.svg" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack bug tracker app build with ASP.NET MVC, C#,
+                      and SQL.
+                    </p>
+                    <a
+                      type="button"
+                      class="btn btn-primary"
+                      href="https://jamalgibson-eatbay.netlify.app/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/BingoBangoLogo.svg" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack bug tracker app build with ASP.NET MVC, C#, and
-                    SQL.
-                  </p>
-                  <a
-                    type="button"
-                    class="btn btn-primary"
-                    href="https://jamalgibson-bingobango.netlify.app/"
-                    target="_blank"
-                  >
-                    Learn More
-                  </a>
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/EventNestLogo.svg" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack bug tracker app build with ASP.NET MVC, C#,
+                      and SQL.
+                    </p>
+                    <a
+                      type="button"
+                      class="btn btn-primary"
+                      href="https://jamalgibson-eventnest.netlify.app/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="hc-wrapper">
-              <div class="hc-card">
-                <picture>
-                  <img src="/img/logos/CashCowLogo.svg" />
-                </picture>
-                <div class="hc-content">
-                  <p>
-                    A full stack bug tracker app build with ASP.NET MVC, C#, and
-                    SQL.
-                  </p>
-                  <a
-                    type="button"
-                    class="btn btn-primary"
-                    href="https://jamalgibson-cashcow.netlify.app/"
-                    target="_blank"
-                  >
-                    Learn More
-                  </a>
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/BingoBangoLogo.svg" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack bug tracker app build with ASP.NET MVC, C#,
+                      and SQL.
+                    </p>
+                    <a
+                      type="button"
+                      class="btn btn-primary"
+                      href="https://jamalgibson-bingobango.netlify.app/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img src="/img/logos/CashCowLogo.svg" />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack bug tracker app build with ASP.NET MVC, C#,
+                      and SQL.
+                    </p>
+                    <a
+                      type="button"
+                      class="btn btn-primary"
+                      href="https://jamalgibson-cashcow.netlify.app/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -463,273 +488,279 @@
         </div>
       </section>
       <section class="section-cta">
-        <a href="#" class="cta-arrow"
-          ><i class="bi bi-arrow-right-square-fill"></i
-        ></a>
-        <span
-          >Want to see what I've been working on recently? Check out my
-          <a href="#">bug tracker</a>!</span
-        >
-        <a href="#" class="cta-arrow"
-          ><i class="bi bi-arrow-left-square-fill"></i
-        ></a>
-      </section>
-      <section class="section-page" id="blog">
-        <h2>Stuff I Write About</h2>
-        <p>
-          I write on my blog on a regular basis. I Think it's important to share
-          your knowledge with others.
-        </p>
-        <div id="blogs">
-          <article class="card mb-4 blog-article">
-            <div class="row g-0 blog-row">
-              <div class="col-md-4 blog-header">
-                <a href="#" class="blog-image-link">
-                  <img
-                    src="/img/Blog/Blog_FlyingGirl.jpg"
-                    class="blog-image"
-                    alt="Blog post image"
-                  />
-                </a>
-                <div class="blog-date">
-                  <div class="blog-day">11</div>
-                  <div class="blog-month">JANUARY</div>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div
-                  class="card-body h-100 d-flex flex-column justify-content-around"
-                >
-                  <h2 class="card-title">MAKE SQL QUEIRIES FLY</h2>
-                  <p class="card-text line-clamp">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </p>
-                  <div>
-                    <a href="#" class="btn btn-primary"> Read More </a>
-                  </div>
-                  <p class="card-text">
-                    <small class="text-muted">Published 3 days ago</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="card mb-4 blog-article">
-            <div class="row g-0 blog-row">
-              <div class="col-md-4 blog-header">
-                <a href="#" class="blog-image-link">
-                  <img
-                    src="/img/Blog/Blog_CodeTag.jpg"
-                    class="blog-image"
-                    alt="Blog post image"
-                  />
-                </a>
-                <div class="blog-date">
-                  <div class="blog-day">11</div>
-                  <div class="blog-month">JANUARY</div>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div
-                  class="card-body h-100 d-flex flex-column justify-content-around"
-                >
-                  <h2 class="card-title">MAKE SQL QUEIRIES FLY</h2>
-                  <p class="card-text line-clamp">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </p>
-                  <div>
-                    <a href="#" class="btn btn-primary"> Read More </a>
-                  </div>
-                  <p class="card-text">
-                    <small class="text-muted">Published 3 days ago</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="card mb-4 blog-article">
-            <div class="row g-0 blog-row">
-              <div class="col-md-4 blog-header">
-                <a href="#" class="blog-image-link">
-                  <img
-                    src="/img/Blog/Blog_Database.jpg"
-                    class="blog-image"
-                    alt="Blog post image"
-                  />
-                </a>
-                <div class="blog-date">
-                  <div class="blog-day">11</div>
-                  <div class="blog-month">JANUARY</div>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div
-                  class="card-body h-100 d-flex flex-column justify-content-around"
-                >
-                  <h2 class="card-title">MAKE SQL QUEIRIES FLY</h2>
-                  <p class="card-text line-clamp">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </p>
-                  <div>
-                    <a href="#" class="btn btn-primary"> Read More </a>
-                  </div>
-                  <p class="card-text">
-                    <small class="text-muted">Published 3 days ago</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="card mb-4 blog-article">
-            <div class="row g-0 blog-row">
-              <div class="col-md-4 blog-header">
-                <a href="#" class="blog-image-link">
-                  <img
-                    src="/img/Blog/Blog_DecisionRoad.jpg"
-                    class="blog-image"
-                    alt="Blog post image"
-                  />
-                </a>
-                <div class="blog-date">
-                  <div class="blog-day">11</div>
-                  <div class="blog-month">JANUARY</div>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div
-                  class="card-body h-100 d-flex flex-column justify-content-around"
-                >
-                  <h2 class="card-title">MAKE SQL QUEIRIES FLY</h2>
-                  <p class="card-text line-clamp">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </p>
-                  <div>
-                    <a href="#" class="btn btn-primary"> Read More </a>
-                  </div>
-                  <p class="card-text">
-                    <small class="text-muted">Published 3 days ago</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
+        <div class="container-xxl">
+          <a href="#" class="cta-arrow"
+            ><i class="bi bi-arrow-right-square-fill"></i
+          ></a>
+          <span
+            >Want to see what I've been working on recently? Check out my
+            <a href="#">bug tracker</a>!</span
+          >
+          <a href="#" class="cta-arrow"
+            ><i class="bi bi-arrow-left-square-fill"></i
+          ></a>
         </div>
       </section>
-      <section class="section-page" id="contact">
-        <h2>Let's Chat!</h2>
-        <form method="POST" data-netlify="true" name="contact">
-          <!-- form is used for user input, must include action attribute! -->
-          <div class="row">
-            <div class="col-12 col-md-6 mb-2">
-              <label for="FirstName" class="form-label">First Name</label>
-              <!-- the for attribute tells us that this label is attributed to the input with that name-->
-              <input
-                name="FirstName"
-                type="text"
-                aria-label="First Name"
-                placeholder="First Name"
-                class="form-control"
-                required
-              />
-              <!-- placeholder is placeholder text within the input bar-->
-            </div>
-            <div class="col-12 col-md-6 mb-2">
-              <label for="LastName" class="form-label">Last Name</label>
-              <input
-                name="LastName"
-                type="text"
-                aria-label="Last Name"
-                placeholder="Last Name"
-                class="form-control"
-                required
-              />
-              <!-- required attribute does not need a value, makes input required-->
-            </div>
-            <div class="col-12 col-md-6 mb-2">
-              <label for="Email" class="form-label">Email</label>
-              <input
-                name="Email"
-                type="email"
-                aria-label="Email"
-                placeholder="Email"
-                class="form-control"
-                required
-              />
-            </div>
-            <div class="col-12 col-md-6 mb-2">
-              <label for="Phone" class="form-label">Phone (optional)</label>
-              <input
-                name="Phone"
-                type="tel"
-                aria-label="Phone"
-                placeholder="Phone"
-                class="form-control"
-              />
-            </div>
-            <div class="col-12 mb-2">
-              <label for="Subject" class="form-label">Subject</label>
-              <input
-                name="Subject"
-                type="text"
-                aria-label="Subject"
-                placeholder="Subject"
-                class="form-control"
-              />
-            </div>
-            <div class="col-12 mb-3">
-              <label for="Message" class="form-label">Message</label>
-              <textarea
-                name="Message"
-                type="text"
-                aria-label="Message"
-                placeholder="Message"
-                class="form-control"
-                required
-                rows="4"
-              ></textarea>
-              <!-- make sure there is no space between textarea begin and end tag, otherwise placeholder text won't appear-->
-            </div>
-            <div class="text-start">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+      <section class="section-page odd" id="blog">
+        <div class="container-xxl">
+          <h2>Stuff I Write About</h2>
+          <p>
+            I write on my blog on a regular basis. I Think it's important to
+            share your knowledge with others.
+          </p>
+          <div id="blogs">
+            <article class="card mb-4 blog-article">
+              <div class="row g-0 blog-row">
+                <div class="col-md-4 blog-header">
+                  <a href="#" class="blog-image-link">
+                    <img
+                      src="/img/Blog/Blog_FlyingGirl.jpg"
+                      class="blog-image"
+                      alt="Blog post image"
+                    />
+                  </a>
+                  <div class="blog-date">
+                    <div class="blog-day">11</div>
+                    <div class="blog-month">JANUARY</div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div
+                    class="card-body h-100 d-flex flex-column justify-content-around"
+                  >
+                    <h2 class="card-title">MAKE SQL QUEIRIES FLY</h2>
+                    <p class="card-text line-clamp">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div>
+                      <a href="#" class="btn btn-primary"> Read More </a>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-muted">Published 3 days ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card mb-4 blog-article">
+              <div class="row g-0 blog-row">
+                <div class="col-md-4 blog-header">
+                  <a href="#" class="blog-image-link">
+                    <img
+                      src="/img/Blog/Blog_CodeTag.jpg"
+                      class="blog-image"
+                      alt="Blog post image"
+                    />
+                  </a>
+                  <div class="blog-date">
+                    <div class="blog-day">11</div>
+                    <div class="blog-month">JANUARY</div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div
+                    class="card-body h-100 d-flex flex-column justify-content-around"
+                  >
+                    <h2 class="card-title">MAKE SQL QUEIRIES FLY</h2>
+                    <p class="card-text line-clamp">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div>
+                      <a href="#" class="btn btn-primary"> Read More </a>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-muted">Published 3 days ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card mb-4 blog-article">
+              <div class="row g-0 blog-row">
+                <div class="col-md-4 blog-header">
+                  <a href="#" class="blog-image-link">
+                    <img
+                      src="/img/Blog/Blog_Database.jpg"
+                      class="blog-image"
+                      alt="Blog post image"
+                    />
+                  </a>
+                  <div class="blog-date">
+                    <div class="blog-day">11</div>
+                    <div class="blog-month">JANUARY</div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div
+                    class="card-body h-100 d-flex flex-column justify-content-around"
+                  >
+                    <h2 class="card-title">MAKE SQL QUEIRIES FLY</h2>
+                    <p class="card-text line-clamp">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div>
+                      <a href="#" class="btn btn-primary"> Read More </a>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-muted">Published 3 days ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card mb-4 blog-article">
+              <div class="row g-0 blog-row">
+                <div class="col-md-4 blog-header">
+                  <a href="#" class="blog-image-link">
+                    <img
+                      src="/img/Blog/Blog_DecisionRoad.jpg"
+                      class="blog-image"
+                      alt="Blog post image"
+                    />
+                  </a>
+                  <div class="blog-date">
+                    <div class="blog-day">11</div>
+                    <div class="blog-month">JANUARY</div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div
+                    class="card-body h-100 d-flex flex-column justify-content-around"
+                  >
+                    <h2 class="card-title">MAKE SQL QUEIRIES FLY</h2>
+                    <p class="card-text line-clamp">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div>
+                      <a href="#" class="btn btn-primary"> Read More </a>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-muted">Published 3 days ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
-        </form>
+        </div>
+      </section>
+      <section class="section-page even" id="contact">
+        <div class="container-xxl">
+          <h2>Let's Chat!</h2>
+          <form method="POST" data-netlify="true" name="contact">
+            <!-- form is used for user input, must include action attribute! -->
+            <div class="row">
+              <div class="col-12 col-md-6 mb-2">
+                <label for="FirstName" class="form-label">First Name</label>
+                <!-- the for attribute tells us that this label is attributed to the input with that name-->
+                <input
+                  name="FirstName"
+                  type="text"
+                  aria-label="First Name"
+                  placeholder="First Name"
+                  class="form-control"
+                  required
+                />
+                <!-- placeholder is placeholder text within the input bar-->
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                <label for="LastName" class="form-label">Last Name</label>
+                <input
+                  name="LastName"
+                  type="text"
+                  aria-label="Last Name"
+                  placeholder="Last Name"
+                  class="form-control"
+                  required
+                />
+                <!-- required attribute does not need a value, makes input required-->
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                <label for="Email" class="form-label">Email</label>
+                <input
+                  name="Email"
+                  type="email"
+                  aria-label="Email"
+                  placeholder="Email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                <label for="Phone" class="form-label">Phone (optional)</label>
+                <input
+                  name="Phone"
+                  type="tel"
+                  aria-label="Phone"
+                  placeholder="Phone"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-12 mb-2">
+                <label for="Subject" class="form-label">Subject</label>
+                <input
+                  name="Subject"
+                  type="text"
+                  aria-label="Subject"
+                  placeholder="Subject"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label for="Message" class="form-label">Message</label>
+                <textarea
+                  name="Message"
+                  type="text"
+                  aria-label="Message"
+                  placeholder="Message"
+                  class="form-control"
+                  required
+                  rows="4"
+                ></textarea>
+                <!-- make sure there is no space between textarea begin and end tag, otherwise placeholder text won't appear-->
+              </div>
+              <div class="text-start">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
     <!-- TODO: fix footer stuff -->
-    <footer class="container-fluid mt-3">
+    <footer class="container-fluid">
       <div class="row footer-bg-cta">
         <div class="col">
-          <div class="container py-2 footer-cta text-center">
+          <div class="container py-2 footer-cta text-center mb-3">
             <h1 class="footer-message">Let's Work Together!</h1>
             <h4 class="footer-message">
               Need something? I'm open to new opportunities and ready to work!
@@ -738,18 +769,20 @@
         </div>
       </div>
       <div
-        class="footer-main py-3 row row-cols-1 row-cols-md-3 align-items-center gy-3 text-center"
+        class="footer-main py-3 row row-cols-1 row-cols-md-3 align-content-between align-items-md-center text-center"
       >
-        <div class="col">
+        <div class="col mb-3 mb-md-0">
           <img
             src="/img/Jamal Name Logo White.png"
             class="img-fluid brandImaging"
           />
           <!-- TODO: change image height and image -->
         </div>
-        <div class="col text-md-end">
+        <div class="col text-md-end mb-2 mb-md-0">
           <!-- TODO: change social media links -->
-          <a href="https://www.linkedin.com/in/jamal-gibson-3b7bb9140/" target="_blank"
+          <a
+            href="https://www.linkedin.com/in/jamal-gibson-3b7bb9140/"
+            target="_blank"
             ><i class="socialicons bi bi-linkedin p-2"></i
           ></a>
           <a href="https://github.com/GI-Jamal" target="_blank"
