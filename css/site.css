@@ -340,6 +340,19 @@ h1,
   margin-bottom: 1rem;
 }
 
+.techLogo {
+  max-width: 70px
+}
+
+.bootstrapLogo {
+  max-width: 88px;
+}
+
+.modal > * {
+  color: black;
+}
+
+
 /***** MEDIA QUERIES *****/
 /* */
 /* @media (orientation: landscape) {
