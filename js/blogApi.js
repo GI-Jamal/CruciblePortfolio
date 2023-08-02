@@ -17,7 +17,6 @@ function displayBlogData(blogPosts, baseUrl) {
       //format image
       let imageDiv = blogPostCard.querySelector('[data-blog="imageLink"]');
       imageDiv.setAttribute("href", `${baseUrl}/content/${blogPost.slug}`);
-      imageDiv.href = `${baseUrl}/content/${blogPost.slug}`;
 
       let imgTag = document.createElement("img");
       if (blogPost.imageData == null) {
@@ -31,7 +30,7 @@ function displayBlogData(blogPosts, baseUrl) {
 
       imgTag.classList.add("blog-image");
       imageDiv.appendChild(imgTag);
-      // <img src="data:image/gif;base64,xxxxxxxxxxxxx..." class="blog-image" alt="...">
+      
       //add title
       let blogTitleDiv = blogPostCard.querySelector('[data-blog="title"]');
       blogTitleDiv.innerHTML = blogPost.title;
