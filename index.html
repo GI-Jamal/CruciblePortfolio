@@ -168,9 +168,9 @@
                 computing, databases, security, data science, and machine
                 learning. I have a Verified Certificate in Introduction to
                 Computer Science from HarvardX and am a recent graduate of Coder
-                Foundry's Full-Stack Web Development course teaching C# and ASP.NET
-                MVC. These experiences have expanded my knowledge of computer
-                science concepts and programming principles, which are
+                Foundry's Full-Stack Web Development course teaching C# and
+                ASP.NET MVC. These experiences have expanded my knowledge of
+                computer science concepts and programming principles, which are
                 invaluable in today's IT environments.
               </p>
               <p>
@@ -369,7 +369,33 @@
             <a href="#contact">Contact me</a> to get a complete code
             walk-through.
           </p>
-          <div class="row row-cols-1 row-cols-md-3 g-5 mt-1">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-5 mt-1">
+            <div class="col">
+              <div class="hc-wrapper">
+                <div class="hc-card">
+                  <picture>
+                    <img
+                      src="/img/logos/Major_League_Baseball_logo.png"
+                      class="img-fluid border border-1"
+                    />
+                  </picture>
+                  <div class="hc-content">
+                    <p>
+                      A full stack MLB league standings application built with
+                      Python and Flask.
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectMLBModal"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col">
               <div class="hc-wrapper">
                 <div class="hc-card">
@@ -777,6 +803,219 @@
     </footer>
 
     <!------ Modals ------>
+
+    <!-- Project One Modal -->
+    <div
+      class="modal fade"
+      id="projectMLBModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      style="color: black"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="exampleModalLabel"
+              style="color: black"
+            >
+              Homebase
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div
+                    id="projectMLBCarousel"
+                    class="carousel slide"
+                    data-bs-theme="dark"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#projectMLBCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectMLBCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectMLBCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#projectMLBCarousel"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="/img/logos/Major_League_Baseball_logo.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/projectImages/mlb1.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/projectImages/mlb2.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="/img/projectImages/mlb3.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#projectMLBCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#projectMLBCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <div>
+                    <p>
+                      Homebase is your one-stop Python web app for all things
+                      Major League Baseball. It combines the power of the MLB
+                      StatsAPI with user-friendly templates. Features include a
+                      Home Page with standings and news, Team Pages showcasing
+                      rosters, Player Pages with biographical info and stats,
+                      and Leaderboards to track the best hitters and pitchers.
+                      Customize templates as needed. With seamless StatsAPI
+                      integration, you'll access up-to-date MLB data
+                      effortlessly. Stay connected to the world of baseball,
+                      from team updates to player insights, all in one place.
+                    </p>
+                    <p>
+                      The system was built primarily using Python and the Flask
+                      web framework in 1 week. The front end was developed with
+                      HTML, CSS, Javascript, and Bootstrap. The application makes
+                      use of pythonanywhere containerization for online hosting.
+                    </p>
+                  </div>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <h4 style="color: black">Project Type:</h4>
+                      <span>Web Application</span>
+                    </li>
+                    <li class="list-group-item">
+                      <!-- extra credit change the tech names to icons, extra-extra credit use bootstrap tooltips -->
+                      <h4 style="color: black">Technologies:</h4>
+                      <p>
+                        <i
+                          class="devicon-python-plain colored"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Python"
+                        ></i>
+                        <i
+                          class="devicon-flask-original colored"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Flask"
+                        ></i>
+                        <i
+                          class="devicon-javascript-plain colored"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Javascript"
+                        ></i>
+                        <i
+                          class="devicon-html5-plain colored"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="HTML5"
+                        ></i>
+                        <i
+                          class="devicon-css3-plain colored"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="CSS3"
+                        ></i>
+                        <i
+                          class="devicon-bootstrap-plain colored"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          data-bs-title="Bootstrap"
+                        ></i>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a
+              type="button"
+              class="btn btn-success"
+              href="https://bluejays-jamal1996.pythonanywhere.com/"
+              target="_blank"
+              >Visit Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Project One Modal -->
     <div
       class="modal fade"
@@ -914,12 +1153,12 @@
                       essential actions seamlessly.
                     </p>
                     <p>
-                      The system was built primaryily with C# and .NET Core 7 in
+                      The system was built primarily with C# and .NET Core 7 in
                       3 weeks. The front end was developed with HTML, CSS,
                       Javascript, jQuery, and Bootstrap. The back end was
                       developed with ASP.NET MVC, along with a Potgres SQL
                       databse with Entity Framework Core. The application makes
-                      us of Railway.app containerization for online hosting.
+                      use of Railway.app containerization for online hosting.
                     </p>
                   </div>
                   <ul class="list-group">
